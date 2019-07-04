@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Ignite.Design.Controls.Settings.RealmSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ignite.Design.Controls.Settings"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="566" Height="328" BorderBrush="#FF999999" Foreground="White">
+    <UserControl.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF171723" Offset="0"/>
+            <GradientStop Color="#FF0E0E13" Offset="1"/>
+        </LinearGradientBrush>
+    </UserControl.Background>
+    <Grid Width="566" Height="328">
+        <TextBox x:Name="AtaldazarPath_Box" HorizontalAlignment="Left" Height="29" Margin="11,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="429" FontSize="16" Background="#FF151723" Opacity="0.85" Foreground="White" BorderBrush="#FF818181" SelectionBrush="White" Text="F:/Games/Ignite Bfa/"/>
+        <Label x:Name="RealmSettings_Title" Content="Настройки игрового клиента" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="AtalDazarPath_Title" Content="Путь до папки с игрой:" HorizontalAlignment="Left" Margin="11,98,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <Button x:Name="ChangeAtaldazar_Button" Content="Изменить" Height="Auto" Margin="445,127,11,172" Background="#FF288BDE" FontSize="14" Cursor="Hand" Click="ChangeAtaldazar_Button_Click"/>
+        <TextBox x:Name="MotherlodePath_Box" HorizontalAlignment="Left" Height="29" Margin="11,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="429" FontSize="16" Background="#FF151723" Opacity="0.85" Foreground="White" BorderBrush="#FF818181" SelectionBrush="White" Text="F:/Games/Ignite Bfa/"/>
+        <Label x:Name="MotherlodePath_Title" Content="Путь до папки с игрой:" HorizontalAlignment="Left" Margin="11,225,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <Button x:Name="ChangeMotherLode_Button" Content="Изменить" Height="Auto" Margin="445,254,11,45" Background="#FF288BDE" FontSize="14" Cursor="Hand" Click="ChangeMotherLode_Button_Click"/>
+        <Label Content="ATAL'DAZAR" HorizontalAlignment="Left" Margin="12,71,0,0" VerticalAlignment="Top" Foreground="#FFA6A4A4" FontSize="14" IsEnabled="False"/>
+        <Label Content="MOTHERLODE" HorizontalAlignment="Left" Margin="12,191,0,0" VerticalAlignment="Top" Foreground="#FFA6A4A4" FontSize="14" IsEnabled="False"/>
+
+    </Grid>
+</UserControl>
